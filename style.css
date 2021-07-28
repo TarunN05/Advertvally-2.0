@@ -277,13 +277,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 37vh;
+  height: 50vh;
   background-color: #ecfbff;
   width: 100%;
 }
 .comapny-name {
   position: relative;
   left: 140px;
+  top: 70px;
 }
 .comapny-name a {
   font-size: 25px;
@@ -302,6 +303,8 @@ footer {
 
 .comapny-services {
   margin-top: 40px;
+  position: relative;
+  top: 70px;
 }
 footer ul {
   margin-top: 20px;
@@ -313,12 +316,13 @@ footer ul li {
 .company-contact {
   position: relative;
   right: 127px;
+  top: 70px;
 }
 
 /* -------------------------[Contact us]------------------------ */
 .contact-us {
   border: 0.01px solid black;
-  height: 26vh;
+  height: 32vh;
   width: 50%;
   text-align: center;
   position: relative;
