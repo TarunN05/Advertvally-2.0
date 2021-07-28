@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  /* background-color: #fdffff; */
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: linear-gradient(80deg, #ffc0cb 50%, #00ffff 50%); */
+  /* background: linear-gradient(#ffc0cb 50%, #00ffff 50%); */
+  /* background: linear-gradient(#f7cdd4, #bbf7f7); */
+  background: linear-gradient(#ffe1e6, #bbf7f7);
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  background-color: #1475cd;
+  color: #fefefe;
+  height: 97%;
+  text-align: center;
+  width: 30%;
+  transform: translateX(250%);
+  transition: transform 0.8s linear;
+}
+.nav-links li {
+  margin-left: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 41px 0px;
+  position: relative;
+  right: 70px;
+}
+
+.burger {
+  cursor: pointer;
+}
+.nav-logo a {
+  font-size: 1.4rem;
+  position: relative;
+  right: 150px;
+}
+
+.burger div {
+  height: 3px;
+  width: 24px;
+  background-color: black;
+  margin: 3px;
+}
+
+.nav-active {
+  transform: translateX(145%);
+}
+
+.burger .bar-1 {
+  width: 50%;
+}
+
+.burger .bar-2 {
+  width: 100%;
+}
+
+.burger .bar-3 {
+  width: 75%;
+}
+
+/* ----------------------------[main Section]-------------------------- */
+
+.main {
+  display: flex;
+  align-items: center;
+  /* background-color: #1475cd; */
+  justify-content: space-around;
+  position: relative;
+  top: -100px;
+  height: 85vh;
+  z-index: -1;
+}
+.right {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.left {
+  position: relative;
+  top: 75px;
+}
+
+.main .right h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+.main .right p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.btn {
+  height: 35px;
+  width: 150px;
+  margin-top: 40px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.colored {
+  background: #1475cd;
+  color: #fefefe;
+}
+.normal {
+  background: #fefefe;
+  color: #1475cd;
+  border: 1px solid #1475cd;
+}
+.left {
+  max-width: 50%;
+}
+.left img {
+  width: 100%;
+  height: auto;
+}
+
+/* ---------------------------------[Services]--------------------------------------- */
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 79px;
+  margin-top: 33px;
+}
+.card {
+  border: 2px solid black;
+  height: 200px;
+  text-align: center;
+  padding: 0px 8px;
+  width: 240px;
+  cursor: pointer;
+}
+.card img {
+  height: 65px;
+  align-items: center;
+}
+.one {
+  position: relative;
+  left: 170px;
+}
+
+.three {
+  position: relative;
+  right: 170px;
+}
+
+/* -----------------------------------[About-us Section]----------------------------------------- */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 43px;
+  margin: 40px;
+}
+.container img {
+  height: 400px;
+}
+.container .part-b {
+  position: relative;
+  right: -31px;
+}
+.container .part-b .heading h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.container .part-b .heading-b h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 48px;
+}
+.container .part-b .about-part-b p {
+  font-size: 16px;
+  margin-top: 42px;
+  padding: 0 39px;
+  margin-left: -32px;
+}
+.more-btn {
+  height: 35px;
+  width: 150px;
+  margin-top: 53px;
+  font-size: 13px;
+  background: #1475cd;
+  color: #fefefe;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* -------------------------------------[solution Section]------------------------------- */
+
+.solution {
+  height: 47vh;
+  position: relative;
+  top: 67px;
+}
+.solution .heading h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  top: -22px;
+  left: 26px;
+  font-size: 2rem;
+}
+.three-solutions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 49px;
+}
+
+.border {
+  /* background: #bde0fe; */
+  cursor: pointer;
+  height: 200px;
+  border-radius: 30px;
+}
+i {
+  font-size: 26px;
+  margin-top: 19px;
+}
+.solution-heading {
+  font-size: 18px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  padding: 0px 20px;
+  color: #374a5c;
+}
+.about-solution {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 18px;
+  color: #bfc7d3;
+}
+.solution-one {
+  position: relative;
+  left: 159px;
+}
+
+.solution-three {
+  position: relative;
+  right: 142px;
+}
+
+/* -----------------------------------[Footer]--------------------------------- */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 37vh;
+  background-color: #ecfbff;
+  width: 100%;
+}
+.comapny-name {
+  position: relative;
+  left: 140px;
+}
+.comapny-name a {
+  font-size: 25px;
+  color: #0170ba;
+}
+.comapny-name p {
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.footer-heading h2 {
+  font-size: 22px;
+  color: #0d2138;
+}
+
+.comapny-services {
+  margin-top: 40px;
+}
+footer ul {
+  margin-top: 20px;
+}
+footer ul li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.company-contact {
+  position: relative;
+  right: 127px;
+}
+
+/* -------------------------[Contact us]------------------------ */
+.contact-us {
+  border: 0.01px solid black;
+  height: 26vh;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  left: 27%;
+  margin-bottom: -100px;
+  background-color: #1475cd;
+  border-radius: 16px;
+}
+
+.form-heading h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 13px;
+  margin-top: 14px;
+  color: #fafcfe;
+}
+
+.form-details h3 {
+  font-size: 18px;
+  padding: 0px 132px;
+  font-weight: 500;
+  margin-bottom: 34px;
+  color: #abcfe2;
+}
+input {
+  width: 62%;
+  height: 31px;
+  border-radius: 53px;
+  border: none;
+  font-size: 16px;
+  color: #a8b2be;
+  padding: 21px 14px;
+  font-weight: 500;
+}
+input:focus {
+  outline: none;
+}
+
+.submit-btn {
+  width: 62%;
+  height: 31px;
+  border-radius: 53px;
+}
